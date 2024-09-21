@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - TheEvent Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <style>
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h2>Visit <span class="butuan">Butuan</span></h2>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/Butuan-City-Agusan-Del-Norte-Philippines.jpg" alt="" data-aos="fade-in" class="">
+      <div class="container d-flex flex-column align-items-center text-center mt-5">
+        <h2 data-aos="fade-up" data-aos-delay="100" class="pt-5">Discover the Hidden Gems of<br><span>Butuan City</span></h2>
+        <p data-aos="fade-up" data-aos-delay="200">Explore our curated list of must-see tourist spots, immerse yourself in the local culture, and uncover the natural beauty that Butuan has to offer.</p>
+      </div>
+    </section><!-- /Hero Section -->
+
+<!-- Tourist Spots Section -->
+<section id="tourist-spots" class="tourist-spots section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Tourist Spots</h2>
+    <p>Discover amazing locations in Butuan City</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+      <!-- National Museum - Butuan -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/museum.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.952542759367727, 125.52697489386063, 'National Museum - Butuan')">National Museum - Butuan</a></h3>
+            <p>A museum showcasing the rich history of Butuan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Balangay Shrine Museum -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/balangay.JPG" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.954257162341532, 125.4965633166205, 'Balangay Shrine Museum')">Balangay Shrine Museum</a></h3>
+            <p>Home to ancient Balangay boats, dating back to 320 AD.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mount Mayapay -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/mayapay.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.87901137593065, 125.46741410014114, 'Mount Mayapay')">Mount Mayapay</a></h3>
+            <p>A prominent mountain offering hiking and scenic views.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bood Promontory Eco Park -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/bood.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.952162748455521, 125.49277568222311, 'Bood Promontory Eco Park')">Bood Promontory Eco Park</a></h3>
+            <p>Site of the first Catholic Mass in Mindanao, with panoramic views.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agusan River -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/agusan.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.946137031463811, 125.54679328547964, 'Agusan River')">Agusan River</a></h3>
+            <p>The longest river in Mindanao, offering river cruises and biodiversity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Delta Discovery Park -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/delta2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.906902978762787, 125.50218547867983, 'Delta Discovery Park')">Delta Discovery Park</a></h3>
+            <p>An eco-adventure park with zip-lining, ATV rides, and camping.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guingona Park -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/park.png" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.947655185771664, 125.54329321855957, 'Guingona Park')">Guingona Park</a></h3>
+            <p>A historical park and popular cultural gathering spot in Butuan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Butuan City Hall Complex -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/cityhall2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.95349439890928, 125.52922246798049, 'Butuan City Hall Complex')">Butuan City Hall Complex</a></h3>
+            <p>A notable landmark and the seat of the local government.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Magellan's Anchorage -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/magellan.JPG" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.999466145103929, 125.48434126521133, 'Magellan\'s Anchorage')">Magellan's Anchorage</a></h3>
+            <p>The site where Magellan anchored during his 1521 expedition.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/banza.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.972067469129863, 125.5384018092057, 'Banza Church Ruins')">Banza Church Ruins</a></h3>
+            <p>It is the oldest stone church ruin in the entire island of Mindanao.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- St. Joseph Cathedral -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
+        <div class="card h-100">
+          <div class="card-img">
+            <img src="assets/img/cathedral.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="card-body">
+            <h3><a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#mapModal" onclick="showMap(8.947793816231222, 125.54249986638942, 'St. Joseph Cathedral')">St. Joseph Cathedral</a></h3>
+            <p>A beautiful cathedral and one of the oldest structures in Butuan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Tourist Spots Section -->
+
+
+
+    <!-- Google Map Modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mapModalLabel">Tourist Spot Location</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Google Maps API with initMap callback function -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV0Bld0KeN3Uibk4467Gz1H3bggOfrIZU&callback=initMap" async defer></script>
+
+  <script>
+    let map;
+    let marker;
+
+    function initMap() {
+      // Default map initialization
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 8.9532, lng: 125.5377 }, // Default center (Butuan City)
+        zoom: 13
+      });
+
+      // Initialize the marker but don't place it yet
+      marker = new google.maps.Marker({
+        map: map,
+        title: 'Tourist Spot'
+      });
+    }
+
+    // Show the map and set the location
+    function showMap(lat, lng, title) {
+      const location = { lat: lat, lng: lng };
+      
+      // Set map center
+      map.setCenter(location);
+      
+      // Place the marker on the selected location
+      marker.setPosition(location);
+      marker.setTitle(title);
+
+      // Adjust zoom for a closer view of the tourist spot
+      map.setZoom(15);
+    }
+
+    // Re-initialize the map when the modal is opened
+    document.getElementById('mapModal').addEventListener('shown.bs.modal', function () {
+      google.maps.event.trigger(map, 'resize');
+      map.setCenter(marker.getPosition()); // Center the map on the last location
+    });
+  </script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
